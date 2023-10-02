@@ -1,1 +1,39 @@
 @import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Rasa:wght@300;500&display=swap');
+
+:root {
+    --font-family: 'Rasa', serif;
+    --main-color: #414141;
+    --secondary-color: #c9c9c9;
+    --max-width: 87.5em;
+    --space: 1.25em;
+    --color-button: #eeeeee;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+img:hover {
+    filter: grayscale(0%);
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 300;
+    color: var(--main-color);
+    font-size: 1em;
+}
