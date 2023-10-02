@@ -47,7 +47,7 @@ body {
 
 /* INICIO HEADER */
 header {
-    padding-top: 2em;
+    padding-top: 2rem;
     background-color: rgba(255, 255, 255, 0.8);
     position: sticky;
     top: 0;
@@ -62,8 +62,8 @@ header .container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-size: 1.75em;
-    padding: 0em 1.25em;
+    font-size: 1.75rem;
+    padding: 0rem 1.25rem;
 }
 
 header nav.container>a {
@@ -106,6 +106,11 @@ header nav.container .menu li .active {
 
 /* INICIO FOOTER */
 
+footer .container {
+    padding: 0rem 1.25rem;
+    color: var(--secondary-color);
+}
+
 
 /* FIN FOOTER */
 
@@ -120,8 +125,6 @@ header nav.container .menu li .active {
 /* MEDIA QUERIES */
 
 @media (width >=48rem) {
-
-    /* INICIO HEADER */
 
     header nav.container #button-menu {
         display: none;
@@ -152,10 +155,13 @@ header nav.container .menu li .active {
     }
 }
 
-/* FIN HEADER */
 
 @media (width >=87.5rem) {
     header .container {
-        padding: 0em;
+        padding: 0rem;
+    }
+
+    footer .container {
+        padding: 0rem;
     }
 }
