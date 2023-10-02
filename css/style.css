@@ -150,11 +150,12 @@ header nav.container .menu li .active {
     header nav.container .menu li a {
         padding: 0rem cal(var(--space) * 1.25) 0rem 0rem;
     }
+}
 
-    /* FIN HEADER */
+/* FIN HEADER */
 
-    @media (width >=87.5rem) {
-        header .container {
-            padding: 0em;
-        }
+@media (width >=87.5rem) {
+    header .container {
+        padding: 0em;
     }
+}
