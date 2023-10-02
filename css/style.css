@@ -153,4 +153,8 @@ header nav.container .menu li .active {
 
     /* FIN HEADER */
 
-}
+    @media (width >=87.5rem) {
+        header .container {
+            padding: 0em;
+        }
+    }
