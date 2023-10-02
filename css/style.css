@@ -104,9 +104,24 @@ header nav.container .menu li .active {
 
 /* FIN HEADER */
 
+/* INICIO FOOTER */
+
+
+/* FIN FOOTER */
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES */
 
 @media (width >=48rem) {
+
+    /* INICIO HEADER */
 
     header nav.container #button-menu {
         display: none;
@@ -136,5 +151,6 @@ header nav.container .menu li .active {
         padding: 0rem cal(var(--space) * 1.25) 0rem 0rem;
     }
 
+    /* FIN HEADER */
 
 }
