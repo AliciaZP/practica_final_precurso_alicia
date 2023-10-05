@@ -1,0 +1,405 @@
+@import url(reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Rasa:wght@400;700&display=swap');
+
+@import url(root.css);
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+/* Inicio del layout principal */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    background-color: var(--color-blanco);
+    color: var(--color-gris-oscuro);
+}
+
+.container {
+    margin: 0 auto;
+}
+
+@media (width >=480px) {
+
+    .container {
+        margin: 0px 100px;
+    }
+}
+
+/* Fin del layout principal */
+
+/* Inicio del header */
+
+.header nav.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0px 24px 12px 12px;
+}
+
+.header nav.container figure {
+    display: inline-block;
+}
+
+.header nav.container figure img {
+    width: calc(var(--font-size) * 6);
+}
+
+.header nav.container ul.menu li a {
+    color: var(--color-gris-oscuros);
+    text-decoration: none;
+    font-size: calc(var(--font-size) * 2);
+}
+
+
+.header nav.container ul.menu ul.desplegable li {
+    margin: 10px 0px;
+    position: relative;
+}
+
+.header nav.container ul.menu ul.desplegable li p {
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: calc(var(--font-size) / 1.2);
+    width: 150%;
+    padding-right: 100px;
+    padding-bottom: 10px;
+    opacity: 0%;
+}
+
+.header nav.container ul.menu ul.desplegable li p:hover {
+    opacity: 100%;
+}
+
+.header nav.container ul.menu ul.desplegable li a {
+    display: inline;
+    font-size: calc(var(--font-size) * 1.5);
+    margin: 20px 0px;
+    border-bottom: 1px dotted var(--color-gris-claro);
+}
+
+.header nav.container ul.menu ul.desplegable {
+    position: absolute;
+    display: none;
+    text-align: center;
+}
+
+.header nav.container ul.menu li:hover ul.desplegable {
+    display: block;
+}
+
+.header nav.container ul.menu ul.desplegable li a:hover {
+    border-bottom: 1px solid var(--color-gris-claro);
+}
+
+@media (width >=480px) {}
+
+/* Fin del header */
+
+/* Inicio de las sections*/
+
+section div.container {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+section div.container h2 {
+    font-size: calc(var(--font-size) * 2.5);
+}
+
+section div.container h3 {
+    font-size: calc(var(--font-size) * 1.3);
+}
+
+section div.container p {
+    color: var(--color-gris-claro);
+    font-size: calc(var(--font-size) * 1.2);
+}
+
+/* Inicio de la primera section*/
+
+section.meettheteam div.container {
+    padding: 20px 0px;
+}
+
+section.meettheteam div.container div.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+
+section.meettheteam div.container div.flex article figure {
+    width: 300px;
+    height: 300px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    overflow: hidden;
+    margin: 80px 100px;
+}
+
+
+section.meettheteam div.container div.flex article>figure:hover {
+
+    transform: rotate(90deg);
+    transition: 1.5s;
+}
+
+section.meettheteam div.container div.flex article figure img {
+    position: relative;
+    bottom: 60px;
+    right: 70px;
+    width: 440px;
+    height: 440px;
+    transform: rotate(-45deg);
+    filter: grayscale(100%);
+
+    &:hover {
+        filter: grayscale(0%);
+        transform: rotate(270deg);
+    }
+}
+
+section.meettheteam div.container div.flex article p {
+    margin-bottom: var(--gap);
+}
+
+section.meettheteam div.container div:nth-child(3) {
+    background-image: url(../images/fondo.png);
+}
+
+section.meettheteam div.container div:nth-child(3) p {
+    color: var(--color-gris-oscuro);
+    font-size: calc(var(--font-size) * 1.3);
+    text-align: center;
+    margin: 140px 30px;
+    line-height: 1.5;
+}
+
+section.meettheteam div.container div:nth-child(3) p a {
+    color: var(--color-gris-oscuro);
+    text-decoration: none;
+    line-height: 1.5;
+    border-bottom: 1px solid var(--color-gris-claro);
+}
+
+@media (width >=480px) {
+
+    section.meettheteam div.container h2 {
+        text-align: left;
+    }
+
+    section.meettheteam div.container div.flex {
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    section.meettheteam div.container div.flex article {
+        width: 20%;
+        height: auto;
+    }
+
+    section.meettheteam div.container div.flex article figure {
+        margin: 60px 25px;
+        width: 290px;
+        height: 290px;
+    }
+
+
+
+}
+
+/* Fin de la primera section */
+
+/* Inicio de la segunda section */
+
+section.ourexpertise div.container {
+    padding: 120px 0px;
+}
+
+section.ourexpertise div.container div.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+section.ourexpertise div.container div.flex article figure {
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 20px;
+    padding: 30px 0px 20px 0px;
+}
+
+section.ourexpertise div.container div.flex article figure {
+    width: 100%;
+    height: 15vh;
+    margin-bottom: 20px;
+    padding: 30px 0px 20px 0px;
+
+}
+
+section.ourexpertise div.container div.flex article figure img {
+    width: 25%;
+    height: auto;
+    margin: 0px auto;
+}
+
+section.ourexpertise div.container div.flex article p {
+    padding: 5px 0px;
+}
+
+section.ourexpertise div.container div.flex {
+    padding-bottom: 20px;
+}
+
+@media (width >=480px) {
+
+    section.ourexpertise div.container div.flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    section.ourexpertise div.container div.flex article {
+        text-align: left;
+        width: 30%;
+    }
+
+    section.ourexpertise div.container div.flex article figure {
+
+        margin-bottom: 50px;
+        margin-left: -180px;
+    }
+
+}
+
+/*Fin de la section 2 */
+
+/*Inicio de la section 3 */
+
+section.waywework div.container h2 {
+    padding-bottom: 40px;
+}
+
+section.waywework div.container h3 {
+    font-size: calc(var(--font-size) * 1.5);
+}
+
+section.waywework div.container p {
+    font-size: calc(var(--font-size) * 1.2);
+    color: var(--color-gris-oscuro);
+    padding: 25px 20px 10px 20px;
+    text-align: left;
+    line-height: 1.2;
+}
+
+section.waywework div.container nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+section.waywework div.container nav ul li {
+    display: inline-block;
+    color: var(--color-gris-claro);
+    font-size: calc(var(--font-size) * 1.3);
+    width: 20%;
+    padding-bottom: 10px;
+    ;
+}
+
+section.waywework div.container nav ul li {
+
+    &:hover {
+        border-bottom: 3px solid black;
+        color: var(--color-gris-oscuro);
+    }
+}
+
+section.waywework div.container article:nth-child(3) {
+    background-color: blue;
+}
+
+section.waywework div.container ul li:hover article:nth-child(3):hover {
+    display: block;
+    opacity: 100%;
+}
+
+section.waywework div.container article:nth-child(4) {
+    background-color: green;
+}
+
+section.waywework div.container article:nth-child(5) {
+    background-color: pink;
+}
+
+section.waywework div.container article:nth-child(6) {
+    background-color: yellow;
+}
+
+section.waywework div.container article:nth-child(7) {
+    background-color: purple;
+}
+
+
+section.waywework div.container article:nth-child(n+4) {
+    position: absolute;
+    visibility: hidden;
+}
+
+section.waywework div.container nav ul li:nth-child(2) {
+    background-color: chartreuse;
+
+    &:hover p {
+        background-color: red;
+        display: inline-block;
+    }
+}
+
+section.waywework div.container nav ul li:nth-child(3) {
+    background-color: aqua;
+}
+
+section.waywework div.container nav ul li:nth-child(4) {
+    background-color: darksalmon;
+}
+
+section.waywework div.container nav ul li:nth-child(5) {
+    background-color: khaki;
+}
+
+/*Fin de la section 3 */
+
+/*Inicio del footer */
+
+footer aside p {
+    color: var(--color-gris-claro);
+    padding-top: 100px;
+}
+
+@media (width >=480px) {
+    footer aside p {
+        padding: 50px 100px;
+    }
+}
+
+/*Fin del footer */
