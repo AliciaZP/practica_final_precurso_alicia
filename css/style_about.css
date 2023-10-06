@@ -104,7 +104,7 @@ footer .container {
 /* final del footer */
 
 main section h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     padding-bottom: 2.5rem;
     text-align: center;
 }
@@ -112,21 +112,12 @@ main section h2 {
 
 /* Inicio meet the team */
 
-main #meettheteam .container .flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main #meettheteam .container .flex article {
-    width: 350px;
-    background-color: red;
+main #meettheteam .container h2 {
+    padding-bottom: 100px;
 }
 
 main #meettheteam .container .flex article figure {
-    max-width: 230px;
-    margin: 230px;
+    max-width: 260px;
     margin: 0 auto;
     transform: rotateZ(45deg);
     overflow: hidden;
@@ -146,10 +137,9 @@ main #meettheteam .container .flex:hover :is(figure, img) {
     transform: rotateZ(0deg);
 }
 
-
 main #meettheteam .container .flex article .role {
     text-align: center;
-    padding: 60px 0px;
+    padding: 60px 0px 70px 0px;
 }
 
 main #meettheteam .container .flex article .role h3 {
@@ -160,6 +150,7 @@ main #meettheteam .container .flex article .role h3 {
 main #meettheteam .container .flex article .role p {
     font-size: 1.2em;
     color: var(--secondaryColor);
+    padding: 5px 0px;
 }
 
 /* fin meet the team */
@@ -168,12 +159,13 @@ main #meettheteam .container .flex article .role p {
 main #hiring .container {
     background-image: url(../images/fondo.png);
     text-align: center;
-    padding: 6.25rem 0rem;
+    padding: 6.25rem 3.125rem;
+    margin: 0rem 0rem 9.375rem 0rem;
 }
 
 main #hiring .container h3 {
     color: var(--mainColor);
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 main #hiring .container h3 a {
@@ -187,29 +179,27 @@ main #hiring .container h3 a {
 
 /* inicio our expertise */
 
-main #ourexpertise .flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space);
+main #ourexpertise .container {
+    padding-bottom: 120px;
 }
 
-main #ourexpertise article {
+main #ourexpertise .container article {
     text-align: center;
 }
 
-main #ourexpertise article figure {
+main #ourexpertise .container article figure {
     max-width: 100px;
     margin: 0 auto;
 }
 
-main #ourexpertise article h3 {
-    font-size: 2rem;
-    padding: var(--space) 0;
+main #ourexpertise .container article h3 {
+    font-size: 1.2rem;
+    padding: 10px 0px 0px 0px;
 }
 
-main #ourexpertise article p {
+main #ourexpertise .container article p {
     color: var(--secondaryColor);
-    font-size: 1.2em;
+    padding: 0px 0px 30px 0px;
 }
 
 /* fin our expertise */
@@ -219,6 +209,7 @@ main #ourexpertise article p {
 main #waywework .container nav ul {
     display: flex;
     justify-content: space-between;
+    margin: 0px 20px 0px 20px;
 }
 
 main #waywework .container nav ul li {
@@ -226,11 +217,25 @@ main #waywework .container nav ul li {
     font-size: var(--space);
     text-align: center;
     width: 20%;
+    padding: 10px 0px;
 
     &:hover {
         border-bottom: 3px solid black;
         color: var(--mainColor);
     }
+}
+
+main #waywework .container article {
+    background-color: red;
+    padding: 20px 20px 100px 20px;
+    margin: 0 auto;
+}
+
+main #waywework .container article h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
 }
 
 main #waywework .container p {
@@ -247,22 +252,12 @@ main #waywework .container nav ul li span:nth-child(2) {
     visibility: hidden;
 }
 
-main #waywework .container article h3 {
-    font-size: 1.5em;
-    font-weight: 500;
-    text-align: center;
-}
-
 /* Aquí oculto las pestañas 2/3/4/5 porque su cambio se hace con java */
 main #waywework .container article:nth-child(n+4) {
     display: none;
 }
 
 /*Fin de the way we work*/
-
-
-
-
 
 
 
@@ -317,12 +312,10 @@ main #waywework .container article:nth-child(n+4) {
 
     main #meettheteam .container .flex article {
         width: 350px;
-        background-color: red;
     }
 
     main #meettheteam .container .flex article figure {
         max-width: 230px;
-        margin: 230px;
         margin: 0 auto;
         transform: rotateZ(45deg);
         overflow: hidden;
