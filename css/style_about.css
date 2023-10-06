@@ -126,58 +126,69 @@ main #meettheteam .container .flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+}
+
+main #meettheteam .container .flex article {
+    width: 350px;
+    background-color: red;
 }
 
 main #meettheteam .container .flex article figure {
-    width: 200px;
-    height: 200px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
+    max-width: 230px;
+    margin: 230px;
+    margin: 0 auto;
+    transform: rotateZ(45deg);
     overflow: hidden;
-    margin: 80px 100px;
-}
-
-
-main #meettheteam .container .flex article>figure:hover {
-
-    transform: rotate(90deg);
-    transition: 1.5s;
+    transition: 1s;
 }
 
 main #meettheteam .container .flex article figure img {
-    position: relative;
-    bottom: 60px;
-    right: 70px;
-    width: 440px;
-    height: 440px;
-    transform: rotate(-45deg);
-    filter: grayscale(100%);
+    transform: rotateZ(-45deg) scale(1.5);
+    transition: 1s;
 
     &:hover {
         filter: grayscale(0%);
-        transform: rotate(270deg);
     }
 }
 
-main #meettheteam .container .flex article p {
-    margin-bottom: var(--gap);
+main #meettheteam .container .flex article figure:hover {
+    transform: rotateZ(0deg);
 }
 
-main #meettheteam .container div:nth-child(3) {
+main #meettheteam .container .flex article figure img:hover {
+    transform: rotateZ(0deg);
+}
+
+main #meettheteam .container .flex article .role {
+    text-align: center;
+    padding: 60px 0px;
+}
+
+main #meettheteam .container .flex article .role h3 {
+    font-size: 1.5em;
+    color: var(--mainColor);
+}
+
+main #meettheteam .container .flex article .role p {
+    font-size: 1.2em;
+    color: var(--secondaryColor);
+}
+
+
+
+main #meettheteam .container .flex:nth-child(3) {
     background-image: url(../images/fondo.png);
 }
 
-main #meettheteam .container div:nth-child(3) p {
+main #meettheteam .container .flex:nth-child(3) p {
     color: var(--color-gris-oscuro);
     font-size: calc(var(--font-size) * 1.3);
     text-align: center;
-    margin: 140px 30px;
     line-height: 1.5;
 }
 
-main #meettheteam .container div:nth-child(3) p a {
+main #meettheteam .container .flex:nth-child(3) p a {
     color: var(--color-gris-oscuro);
     text-decoration: none;
     line-height: 1.5;
