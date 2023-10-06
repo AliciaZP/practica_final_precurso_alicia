@@ -109,6 +109,7 @@ main section h2 {
     text-align: center;
 }
 
+
 /* inicio our expertise */
 
 main #ourexpertise .flex {
@@ -138,7 +139,51 @@ main #ourexpertise article p {
 
 /* fin our expertise */
 
+/*Inicio de the way we work*/
 
+main #waywework .container nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+main #waywework .container nav ul li {
+    color: var(--secondaryColor);
+    font-size: var(--space);
+    text-align: center;
+    width: 20%;
+
+    &:hover {
+        border-bottom: 3px solid black;
+        color: var(--mainColor);
+    }
+}
+
+main #waywework .container p {
+    font-size: 1.2em;
+    color: var(--mainColor);
+    line-height: 1.2em;
+}
+
+main #waywework .container nav ul li span:first-child {
+    padding-left: 2.5rem;
+}
+
+main #waywework .container nav ul li span:nth-child(2) {
+    visibility: hidden;
+}
+
+main #waywework .container article h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Aquí oculto las pestañas 2/3/4/5 porque su cambio se hace con java */
+main #waywework .container article:nth-child(n+4) {
+    display: none;
+}
+
+/*Fin de the way we work*/
 
 
 
@@ -195,7 +240,7 @@ main #ourexpertise article p {
     main #ourexpertise .flex {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     main #ourexpertise article {
@@ -212,9 +257,53 @@ main #ourexpertise article p {
         text-align: left;
     }
 
+    main #waywework .container nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    main #waywework .container nav ul li {
+        color: var(--secondaryColor);
+        font-size: var(--space);
+        text-align: center;
+        width: 20%;
+
+        &:hover {
+            border-bottom: 3px solid black;
+            color: var(--mainColor);
+        }
+    }
+
+    main #waywework .container p {
+        font-size: 1.2em;
+        color: var(--mainColor);
+        text-align: left;
+        line-height: 1.2em;
+    }
+
+    main #waywework .container nav ul li span:first-child {
+        visibility: hidden;
+    }
+
+    main #waywework .container nav ul li span:nth-child(2) {
+        visibility: visible;
+    }
+
+    main #waywework .container article h3 {
+        visibility: hidden
+    }
+
+    /* Aquí oculto las pestañas 2/3/4/5 porque su cambio se hace con java */
+    main #waywework .container article:nth-child(n+4) {
+        display: none;
+    }
+
+
 }
 
-@media(min-width: 1000px) {
+@media(min-width: 62.5rem) {
     main #news article figure {
         max-height: 280px;
         overflow: hidden;
@@ -234,4 +323,5 @@ main #ourexpertise article p {
         max-height: 400px;
         overflow: hidden;
     }
+
 }
