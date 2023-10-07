@@ -164,6 +164,7 @@ main #hiring .container {
     background-image: url(../images/fondo.png);
     text-align: center;
     padding: 6.25rem 3.125rem;
+    margin-bottom: 150px;
 
 }
 
@@ -325,7 +326,6 @@ main #waywework .container article:nth-child(n+4) {
 
     main #meettheteam .container .flex article {
         width: 350px;
-        background-color: red;
     }
 
     main #meettheteam .container .flex article figure {
