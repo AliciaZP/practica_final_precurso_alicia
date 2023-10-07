@@ -122,7 +122,7 @@ main #meettheteam .container h2 {
 }
 
 main #meettheteam .container .flex article figure {
-    max-width: 16.25rem;
+    max-width: 350px;
     margin: 0 auto;
     transform: rotateZ(45deg);
     overflow: hidden;
@@ -149,6 +149,7 @@ main #meettheteam .container .flex figure img:hover {
 main #meettheteam .container .flex article .role {
     text-align: center;
     padding: 3.75rem 0rem 4.375rem 0rem;
+    margin: 1.25rem 0rem;
 }
 
 main #meettheteam .container .flex article .role h3 {
@@ -219,7 +220,7 @@ main #expertise .container article p {
 main #waywework .container nav ul {
     display: flex;
     justify-content: space-between;
-    margin: 0rem 1.25rem 0rem 1.25rem;
+    margin: 0rem 1.25rem;
 }
 
 main #waywework .container nav ul li {
@@ -288,7 +289,6 @@ main #waywework .container article:nth-child(n+4) {
 
     header nav.container .menu {
         width: 80%;
-
         order: 1;
     }
 
@@ -326,7 +326,6 @@ main #waywework .container article:nth-child(n+4) {
     }
 
     main #meettheteam .container h2 {
-        padding-bottom: 6.25rem;
         margin-top: 6.25rem;
     }
 
@@ -349,26 +348,11 @@ main #waywework .container article:nth-child(n+4) {
         transition: 1s;
     }
 
-    main #meettheteam .container .flex article figure img {
-        transform: rotateZ(-45deg) scale(1.7);
-        transition: 1s;
-
-        &:hover {
-            filter: grayscale(0%);
-        }
-    }
-
-    main #meettheteam .container .flex figure:hover {
-        transform: rotateZ(0deg);
-    }
-
-    main #meettheteam .container .flex figure img:hover {
-        transform: rotateZ(0deg);
-    }
 
     main #meettheteam .container .flex article .role {
         text-align: center;
         padding: 3.75rem 0rem;
+        margin: 0rem;
     }
 
     main #meettheteam .container .flex article .role h3 {
@@ -382,21 +366,14 @@ main #waywework .container article:nth-child(n+4) {
     }
 
     main #hiring .container {
-        background-image: url(../images/fondo.png);
         padding: 6.25rem 0rem;
         margin-bottom: 3.125rem;
     }
 
     main #hiring .container h3 {
-        color: var(--mainColor);
         font-size: 1.5em;
     }
 
-    main #hiring .container h3 a {
-        color: var(--mainColor);
-        text-decoration: none;
-        border-bottom: 1px solid var(--secondaryColor);
-    }
 
     main #expertise .container {
         padding: 9.375rem 1.25rem;
@@ -434,9 +411,6 @@ main #waywework .container article:nth-child(n+4) {
         text-align: left;
     }
 
-    main #waywework .container {
-        padding: 0rem 1.25rem;
-    }
 
     main #waywework .container nav ul {
         display: flex;
@@ -445,17 +419,6 @@ main #waywework .container article:nth-child(n+4) {
         align-items: center;
     }
 
-    main #waywework .container nav ul li {
-        color: var(--secondaryColor);
-        font-size: var(--space);
-        text-align: center;
-        width: 20%;
-
-        &:hover {
-            border-bottom: 3px solid black;
-            color: var(--mainColor);
-        }
-    }
 
     main #waywework .container article {
         padding: 0rem 0rem 6.25rem 0rem;
