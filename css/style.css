@@ -86,6 +86,10 @@ header nav.container .menu a {
     padding: 0.625rem 0rem;
     text-decoration: none;
     color: var(--mainColor);
+
+    &:hover {
+        border-bottom: 1px dotted var(--secondaryColor);
+    }
 }
 
 header nav.container .menu .active {
@@ -353,6 +357,10 @@ main #news .flex article a h3 {
 
     header nav.container .menu a {
         padding: 0rem calc(var(--space)*1.25) 0 0;
+
+        &:hover {
+            border-bottom: none;
+        }
     }
 
     .hero h1 {

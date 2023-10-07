@@ -86,6 +86,11 @@ header nav.container .menu a {
     padding: 0.625rem 0rem;
     text-decoration: none;
     color: var(--mainColor);
+
+
+    &:hover {
+        border-bottom: 1px dotted var(--secondaryColor);
+    }
 }
 
 header nav.container .menu .active {
@@ -312,6 +317,10 @@ main #waywework .container article:nth-child(n+4) {
         max-width: 43.75rem;
     }
 
+    main #meettheteam .container {
+        padding: 0px 20px;
+    }
+
     main #meettheteam .container h2 {
         padding-bottom: 100px;
         margin-top: 100px;
@@ -387,6 +396,9 @@ main #waywework .container article:nth-child(n+4) {
         border-bottom: 1px solid var(--secondaryColor);
     }
 
+    main #ourexpertise .container {
+        padding: 0px 20px;
+    }
 
     main #ourexpertise .container .flex {
         display: flex;
@@ -419,6 +431,10 @@ main #waywework .container article:nth-child(n+4) {
 
     main section h2 {
         text-align: left;
+    }
+
+    main #waywework .container {
+        padding: 0px 20px;
     }
 
     main #waywework .container nav ul {
@@ -469,6 +485,7 @@ main #waywework .container article:nth-child(n+4) {
     main #waywework .container article:nth-child(n+4) {
         display: none;
     }
+
 }
 
 /* mediaqueries */
@@ -478,6 +495,27 @@ main #waywework .container article:nth-child(n+4) {
         max-height: 280px;
         overflow: hidden;
     }
+
+
+    main #meettheteam .container {
+        padding: 0px 20px;
+    }
+
+
+    main #meettheteam .container .flex article {
+        width: 350px;
+    }
+
+    main #ourexpertise .container {
+        padding: 0px 20px;
+    }
+
+    main #waywework .container {
+        padding: 0px 20px;
+    }
+
+
+
 }
 
 /* mediaqueries */
@@ -494,6 +532,23 @@ main #waywework .container article:nth-child(n+4) {
     main #news article figure {
         max-height: 400px;
         overflow: hidden;
+    }
+
+    main #meettheteam .container {
+        padding: 0px 20px;
+    }
+
+
+    main #meettheteam .container .flex article {
+        width: 300px;
+    }
+
+    main #ourexpertise .container {
+        padding: 0px 20px;
+    }
+
+    main #waywework .container {
+        padding: 0px 20px;
     }
 
 }
