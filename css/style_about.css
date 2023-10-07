@@ -133,7 +133,11 @@ main #meettheteam .container .flex article figure img {
     }
 }
 
-main #meettheteam .container .flex:hover :is(figure, img) {
+main #meettheteam .container .flex figure:hover {
+    transform: rotateZ(0deg);
+}
+
+main #meettheteam .container .flex figure img:hover {
     transform: rotateZ(0deg);
 }
 
@@ -160,7 +164,7 @@ main #hiring .container {
     background-image: url(../images/fondo.png);
     text-align: center;
     padding: 6.25rem 3.125rem;
-    margin: 0rem 0rem 9.375rem 0rem;
+
 }
 
 main #hiring .container h3 {
@@ -199,7 +203,7 @@ main #ourexpertise .container article h3 {
 
 main #ourexpertise .container article p {
     color: var(--secondaryColor);
-    padding: 0px 0px 30px 0px;
+    padding: 10px 0px 30px 0px;
 }
 
 /* fin our expertise */
@@ -226,7 +230,6 @@ main #waywework .container nav ul li {
 }
 
 main #waywework .container article {
-    background-color: red;
     padding: 20px 20px 100px 20px;
     margin: 0 auto;
 }
@@ -299,8 +302,18 @@ main #waywework .container article:nth-child(n+4) {
         padding: 0rem calc(var(--space)*1.25) 0 0;
     }
 
+
+    footer .container p {
+        padding: 0px 0px 50px 0px;
+    }
+
     .hero h1 {
         max-width: 43.75rem;
+    }
+
+    main #meettheteam .container h2 {
+        padding-bottom: 100px;
+        margin-top: 100px;
     }
 
     main #meettheteam .container .flex {
@@ -312,6 +325,7 @@ main #waywework .container article:nth-child(n+4) {
 
     main #meettheteam .container .flex article {
         width: 350px;
+        background-color: red;
     }
 
     main #meettheteam .container .flex article figure {
@@ -331,7 +345,12 @@ main #waywework .container article:nth-child(n+4) {
         }
     }
 
-    main #meettheteam .container .flex:hover :is(figure, img) {
+
+    main #meettheteam .container .flex figure:hover {
+        transform: rotateZ(0deg);
+    }
+
+    main #meettheteam .container .flex figure img:hover {
         transform: rotateZ(0deg);
     }
 
@@ -353,8 +372,8 @@ main #waywework .container article:nth-child(n+4) {
 
     main #hiring .container {
         background-image: url(../images/fondo.png);
-        text-align: center;
         padding: 6.25rem 0rem;
+        margin-bottom: 150px;
     }
 
     main #hiring .container h3 {
@@ -369,20 +388,33 @@ main #waywework .container article:nth-child(n+4) {
     }
 
 
-    main #ourexpertise .flex {
+    main #ourexpertise .container .flex {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
     }
 
-    main #ourexpertise article {
-        text-align: left;
+    main #ourexpertise .container .flex article {
         width: 30%;
+        position: relative;
+        margin-bottom: 100px;
     }
 
-    main #ourexpertise article figure {
+    main #ourexpertise .container .flex article h3 {
+        position: absolute;
+    }
+
+    main #ourexpertise .container .flex article p {
+        position: absolute;
+        top: 120px;
+    }
+
+
+    main #ourexpertise .container .flex article figure {
         max-width: 100px;
-        margin: 0px;
+        margin-left: 0px;
+        padding-bottom: 0px;
     }
 
     main section h2 {
@@ -408,8 +440,13 @@ main #waywework .container article:nth-child(n+4) {
         }
     }
 
-    main #waywework .container p {
-        font-size: 1.2em;
+
+    main #waywework .container article {
+        padding: 0px 0px 100px 0px;
+    }
+
+    main #waywework .container article p {
+        font-size: 1.5em;
         color: var(--mainColor);
         text-align: left;
         line-height: 1.2em;
