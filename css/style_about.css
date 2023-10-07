@@ -332,12 +332,12 @@ main #waywework .container article:nth-child(n+4) {
     main #meettheteam .container .flex {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
 
     main #meettheteam .container .flex article {
-        width: 350px;
+        width: 35%;
     }
 
     main #meettheteam .container .flex article figure {
@@ -466,7 +466,7 @@ main #waywework .container article:nth-child(n+4) {
 
 
     main #meettheteam .container .flex article {
-        width: 350px;
+        width: 30%;
     }
 
     main #expertise .container {
@@ -501,7 +501,7 @@ main #waywework .container article:nth-child(n+4) {
 
 
     main #meettheteam .container .flex article {
-        width: 300px;
+        width: 25%;
     }
 
     main #expertise .container {
