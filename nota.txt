@@ -1,0 +1,5 @@
+1.Creo el proyecto con la plantilla de INDEX de Juanan
+2.Traspaso mis archivos ya hechos de ABOUT
+3.Fusiono la plantilla con mi archivo ABOUT
+Como la práctica de ABOUT la hice antes de saber que sería obligatoria dejo separados los archivos css de cada html para evitar tener que hacer la funsión de ambos y que salte algún fallo.
+5. Subo todo a ORIGIN
